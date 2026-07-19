@@ -1,4 +1,4 @@
-namespace IT_ELECTIVE_2_Midterm_A1_Reales_Jonnidel.Models;
+namespace IT_ELECTIVE_2_Midterm_A2_Reales_Jonnidel.Models;
 
 public class ErrorViewModel
 {

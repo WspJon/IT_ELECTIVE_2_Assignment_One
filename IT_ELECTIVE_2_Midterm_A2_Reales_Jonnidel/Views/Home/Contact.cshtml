@@ -1,0 +1,64 @@
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<section id="contact" class="section-padding">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <p class="section-subtitle text-gradient-sm text-uppercase fw-600 letter-spacing-2 mb-2">Get In Touch</p>
+            <h2 class="section-title display-5 fw-800">Contact Me</h2>
+            <div class="section-divider mx-auto mt-3"></div>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-8">
+                <div class="row g-4">
+                    <!-- Email -->
+                    <div class="col-md-6">
+                        <div class="contact-card glass-card p-4 text-center h-100">
+                            <div class="contact-icon-wrapper mx-auto mb-3">
+                                <i class="bi bi-envelope-fill fs-3"></i>
+                            </div>
+                            <h5 class="fw-700 mb-2">Email</h5>
+                            <a href="mailto:@ViewData["Email"]" class="text-secondary text-decoration-none">@ViewData["Email"]</a>
+                        </div>
+                    </div>
+                    <!-- Mobile -->
+                    <div class="col-md-6">
+                        <div class="contact-card glass-card p-4 text-center h-100">
+                            <div class="contact-icon-wrapper mx-auto mb-3">
+                                <i class="bi bi-phone-fill fs-3"></i>
+                            </div>
+                            <h5 class="fw-700 mb-2">Mobile</h5>
+                            <a href="tel:@ViewData["Mobile"]" class="text-secondary text-decoration-none">@ViewData["Mobile"]</a>
+                        </div>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="col-md-6">
+                        <div class="contact-card glass-card p-4 text-center h-100">
+                            <div class="contact-icon-wrapper mx-auto mb-3">
+                                <i class="bi bi-github fs-3"></i>
+                            </div>
+                            <h5 class="fw-700 mb-2">GitHub</h5>
+                            <a href="@ViewData["GitHubUrl"]" class="text-secondary text-decoration-none" target="_blank">@ViewData["GitHub"]</a>
+                        </div>
+                    </div>
+                    <!-- Facebook -->
+                    <div class="col-md-6">
+                        <div class="contact-card glass-card p-4 text-center h-100">
+                            <div class="contact-icon-wrapper mx-auto mb-3">
+                                <i class="bi bi-facebook fs-3"></i>
+                            </div>
+                            <h5 class="fw-700 mb-2">Facebook</h5>
+                            <a href="@ViewData["FacebookUrl"]" class="text-secondary text-decoration-none" target="_blank">@ViewData["Facebook"]</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="#" class="btn btn-gradient btn-lg px-5 py-3">
+                        <i class="bi bi-download me-2"></i>Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

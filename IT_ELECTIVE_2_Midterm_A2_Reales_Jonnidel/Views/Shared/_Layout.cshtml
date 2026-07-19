@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/IT_ELECTIVE_2_Midterm_A1_Reales_Jonnidel.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/IT_ELECTIVE_2_Midterm_A2_Reales_Jonnidel.styles.css" asp-append-version="true" />
 </head>
 <body>
 
@@ -38,27 +38,27 @@
             <nav class="sidebar-nav-mobile">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home" data-bs-dismiss="offcanvas">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index" data-bs-dismiss="offcanvas">
                             <i class="bi bi-house-door me-3"></i>Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about" data-bs-dismiss="offcanvas">
+                        <a class="nav-link" asp-controller="Home" asp-action="About" data-bs-dismiss="offcanvas">
                             <i class="bi bi-person me-3"></i>About Me
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills" data-bs-dismiss="offcanvas">
+                        <a class="nav-link" asp-controller="Home" asp-action="Skills" data-bs-dismiss="offcanvas">
                             <i class="bi bi-gear me-3"></i>Skills
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects" data-bs-dismiss="offcanvas">
+                        <a class="nav-link" asp-controller="Home" asp-action="Projects" data-bs-dismiss="offcanvas">
                             <i class="bi bi-folder me-3"></i>Projects
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">
+                        <a class="nav-link" asp-controller="Home" asp-action="Contact" data-bs-dismiss="offcanvas">
                             <i class="bi bi-envelope me-3"></i>Contact
                         </a>
                     </li>
@@ -80,27 +80,27 @@
         <nav class="sidebar-nav flex-grow-1">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#home" id="nav-home">
+                    <a class="nav-link" asp-controller="Home" asp-action="Index" id="nav-home">
                         <i class="bi bi-house-door me-3"></i>Home
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about" id="nav-about">
+                    <a class="nav-link" asp-controller="Home" asp-action="About" id="nav-about">
                         <i class="bi bi-person me-3"></i>About Me
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills" id="nav-skills">
+                    <a class="nav-link" asp-controller="Home" asp-action="Skills" id="nav-skills">
                         <i class="bi bi-gear me-3"></i>Skills
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects" id="nav-projects">
+                    <a class="nav-link" asp-controller="Home" asp-action="Projects" id="nav-projects">
                         <i class="bi bi-folder me-3"></i>Projects
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact" id="nav-contact">
+                    <a class="nav-link" asp-controller="Home" asp-action="Contact" id="nav-contact">
                         <i class="bi bi-envelope me-3"></i>Contact
                     </a>
                 </li>

@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- ============================================================ -->
+<!-- SECTION: HOME / HERO                                         -->
+<!-- ============================================================ -->
+<section id="home" class="hero-section d-flex align-items-center min-vh-100">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7 order-2 order-lg-1">
+                <p class="hero-greeting mb-2 animate-fade-up">@ViewData["Greeting"]</p>
+                <h1 class="hero-name display-3 fw-800 mb-2 animate-fade-up delay-1">
+                    @ViewData["Name"] <span class="text-gradient">@ViewData["LastNameGradient"]</span>
+                </h1>
+                <h2 class="hero-title h4 fw-400 text-secondary mb-4 animate-fade-up delay-2">
+                    <i class="bi bi-code-slash me-2"></i>@ViewData["JobTitle"]
+                </h2>
+                <p class="hero-intro lead mb-4 animate-fade-up delay-3">
+                    @ViewData["Intro"]
+                </p>
+                <div class="d-flex flex-wrap gap-3 animate-fade-up delay-4">
+                    <a asp-controller="Home" asp-action="Projects" class="btn btn-gradient btn-lg px-4 py-2">
+                        <i class="bi bi-folder2-open me-2"></i>View Projects
+                    </a>
+                    <a asp-controller="Home" asp-action="Contact" class="btn btn-outline-accent btn-lg px-4 py-2">
+                        <i class="bi bi-send me-2"></i>Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 order-1 order-lg-2 text-center animate-fade-up delay-2">
+                <div class="hero-image-wrapper mx-auto">
+                    <img src="~/images/profile.jpg" alt="Jonnidel Reales - Professional Photo"
+                         class="img-fluid rounded-circle hero-photo" />
+                    <div class="hero-image-ring"></div>
+                    <div class="hero-image-ring ring-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
